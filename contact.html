@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="./static/style.css">
+    <style>
+        
+        .navbar{
+            background-color: black;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .inp{
+            margin: 8px 0px;
+            padding: 8px 10px;
+            width: 30vw;
+            border-radius: 15px;
+            background: none;
+        }
+        textarea{
+            width: 30vw;
+            border-radius: 15px;
+            padding: 10px 10px;
+            margin: 8px 0px;
+        }
+        button{
+            margin: 5px 0px;
+            padding: 10px 15px;
+            border-radius: 10px;
+            background-color: black;
+            color: white;
+            font-size: 2em;
+            transition: 0.5s;
+        }
+        button:hover{
+            background-color: aqua;
+            box-shadow: 0px 0px 50px green;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="height">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="">Sections</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Donate</a></li>
+            <li><a href="./contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <form action="" method="post">
+        <input type="text" name="name" id="name" class="inp" placeholder="Enter your name">
+        <input type="number" name="number" id="number" class="inp" placeholder="Enter your contact number">
+        <input type="email" name="email" id="email" class="inp" placeholder="Enter your email">
+        <input type="text" name="address" id="address" class="inp" placeholder="Enter your address">
+        <textarea name="textarea" id="" cols="30" rows="10" placeholder="Write your problem"></textarea>
+        <button>Submit</button>
+    </form>
+</body>
+</html>
